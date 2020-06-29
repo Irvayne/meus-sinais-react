@@ -12,33 +12,14 @@ import details_1 from '../assets/img/details-1.png';
 import testimonials_1 from '../assets/img/testimonials/testimonials-1.jpg';
 import testimonials_2 from '../assets/img/testimonials/testimonials-2.jpg';
 import testimonials_3 from '../assets/img/testimonials/testimonials-3.jpg';
+import Header from '../pages/components/Header';
 
-export default function Login() {
+export default function Login({history}) {
+
 
 	return(
 		<div>
-		<header id="header" className="fixed-top">
-    		<div className="container d-flex">
-
-      <div className="logo mr-auto">
-        <h1 className="text-light"><a href="index.html">Meus Sinais</a></h1>
-      </div>
-
-      <nav className="nav-menu d-none d-lg-block">
-        <ul>
-          <li className="active"><a href="#header">Página Inicial</a></li>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#faq">Dúvidas?</a></li>
-         
-			<li><a href="#">Colaborador</a><br/></li>
-			<li><a href="#">Paciente</a><br/></li>
-
-          <li className="get-started"><a href="#">Agendar atendimento</a></li>
-        </ul>
-      </nav>
-
-    </div>
-  </header>
+		<Header history={history}/>
 
   <section id="hero" className="d-flex align-items-center">
 
