@@ -1,0 +1,9 @@
+#button-agendamento{
+    margin-top: 15px;
+    background: #57b1ba;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    border-color: #57b1ba;
+    min-width: 270px;
+}

@@ -1,0 +1,26 @@
+.meus-botoes-logar{
+    background: #57b1ba;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    border-color: #57b1ba;
+    min-width: 270px;
+}
+
+.meus-botoes-novo{
+    background: #fff; 
+    color: #57b1ba;;
+    border-radius: 50px;
+    padding: 10px 25px;
+    border-color: #57b1ba;
+    min-width: 270px;
+}
+
+#div-menu{
+    margin: auto;
+    height: 500px;
+}
+
+.row{
+    margin-top: 25px;
+}

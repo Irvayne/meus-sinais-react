@@ -1,21 +1,30 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
-import '../assets/vendor/bootstrap/css/bootstrap.min.css';
-import '../assets/vendor/icofont/icofont.min.css';
-import '../assets/vendor/boxicons/css/boxicons.min.css';
-import '../assets/vendor/owl.carousel/assets/owl.carousel.min.css';
-import '../assets/vendor/venobox/venobox.css';
-import '../assets/vendor/aos/aos.css';
-import '../assets/css/style.css';
 import log from '../assets/img/logo.png';
 import details_1 from '../assets/img/details-1.png'; 
 import testimonials_1 from '../assets/img/testimonials/testimonials-1.jpg';
 import testimonials_2 from '../assets/img/testimonials/testimonials-2.jpg';
 import testimonials_3 from '../assets/img/testimonials/testimonials-3.jpg';
 import Header from '../pages/components/Header';
+import Footer from '../pages/components/Footer';
+
+import './Home.css';
 
 export default function Login({history}) {
 
+  const [smartphone, setSmartphone] = useState(false);
+
+
+  useEffect(() => {
+      
+    if (window.innerWidth < 550){
+      setSmartphone(true);
+}
+}, [window.innerWidth]);
+
+function cadastrarPaciente(){
+  history.push('/cadastrar/paciente');
+}
 
 	return(
 		<div>
@@ -34,7 +43,12 @@ export default function Login({history}) {
           </div>
         </div>
         <div className="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
-          <img src={log} className="img-fluid" alt="" style={{maxWidth: '75%',margin: 'auto'}}></img>
+          <img src={log} className="img-fluid" alt="" style={{maxWidth: '60%',margin: 'auto'}}></img>
+          {smartphone == true &&(
+            <button id="button-agendamento" onClick={()=>cadastrarPaciente()} >Agendar Atendimento</button>
+            )
+          }
+          
         </div>
       </div>
     </div>
@@ -262,54 +276,7 @@ sobre as principais desordens mentais e práticas de autocuidado.</li>
 
 
 
-  <footer id="footer">
-
-
-
-    <div className="footer-top">
-      <div className="container">
-        <div className="row">
-
-          <div className="col-lg-3 col-md-6 footer-contact" data-aos="fade-up">
-            <h3>Psicólogos 24hrs</h3>
-            <p>
-              Centro <br/>
-              Teresina, Piauí<br/>
-              Brasil <br/><br/>
-              <strong>Telefone:</strong> +55 86 9 9929-2372<br></br>
-              <strong>Email:</strong> atendimento@psicologos24.com<br></br>
-            </p>
-          </div>
-
-
-
-
-
-          <div className="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="300">
-            <h4>Nossas Redes Sociais</h4>
-            <p>Encontre-nos também nas redes sociais abaixo</p>
-            <div className="social-links mt-3">
-              <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-              <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-              <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-              <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-              <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div className="container py-4">
-      <div className="copyright">
-        &copy; Copyright <strong><span>Meus sinais</span></strong>. Todos os direitos reservados
-      </div>
-      <div className="credits">
-        Desenvolvido por <a href="https://bootstrapmade.com/">Alexandre, Irvayne e Otávio</a>
-      </div>
-    </div>
-  </footer>
+  <Footer />
 
   </div>
 
