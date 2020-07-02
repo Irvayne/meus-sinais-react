@@ -7,6 +7,10 @@
     min-width: 270px;
 }
 
+#link-cadastro{
+    margin-left: 50px;
+}
+
 .meus-botoes-novo{
     background: #fff; 
     color: #57b1ba;;
@@ -22,5 +26,9 @@
 }
 
 .row{
-    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.div-center{
+    text-align: center;
 }

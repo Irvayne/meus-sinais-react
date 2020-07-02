@@ -43,11 +43,12 @@ function cadastrarPaciente(){
           </div>
         </div>
         <div className="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
-          <img src={log} className="img-fluid" alt="" style={{maxWidth: '60%',margin: 'auto'}}></img>
-          {smartphone == true &&(
+        {smartphone == true &&(
             <button id="button-agendamento" onClick={()=>cadastrarPaciente()} >Agendar Atendimento</button>
             )
           }
+          <img src={log} className="img-fluid" alt="" style={{maxWidth: '60%',margin: 'auto'}}></img>
+          
           
         </div>
       </div>
@@ -268,6 +269,8 @@ sobre as principais desordens mentais e práticas de autocuidado.</li>
 
       </div>
     </section>
+
+    
 
 
 
