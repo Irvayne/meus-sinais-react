@@ -22,9 +22,9 @@ export default function Login({history}) {
 }
 }, [window.innerWidth]);
 
-function cadastrarPaciente(){
-  history.push('/cadastrar/paciente');
-}
+  function menuPaciente(){
+    history.push('/menu/paciente');
+  }
 
 	return(
 		<div>
@@ -44,7 +44,7 @@ function cadastrarPaciente(){
         </div>
         <div className="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
         {smartphone == true &&(
-            <button id="button-agendamento" onClick={()=>cadastrarPaciente()} >Agendar Atendimento</button>
+            <button id="button-agendamento" onClick={()=>menuPaciente()} >Agendar Atendimento</button>
             )
           }
           <img src={log} className="img-fluid" alt="" style={{maxWidth: '60%',margin: 'auto'}}></img>

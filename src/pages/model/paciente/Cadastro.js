@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
 
-
-
 import '../../../assets/bootstrap-4.1.3-dist/css/bootstrap-grid.css';
 import '../../../assets/bootstrap-4.1.3-dist/css/bootstrap.css';
 import Header from '../../components/Header';
@@ -10,32 +8,9 @@ import Footer from '../../components/Footer';
 
 export default function Cadastrar({history}){
 
-    const [menu, setMenu] = useState(true);
-    const [cadastro, setCadastro] = useState(false);
-    const [login, setLogin] = useState(false);
-
-    function realizarLogin(){
-        setLogin(true);
-        setCadastro(false);
-        setMenu(false);
-    }
-    function realizarCadastro(){
-        setLogin(false);
-        setCadastro(true);
-        setMenu(false);
-    }
-
-    function exibirMenu(){
-        setLogin(false);
-        setCadastro(false);
-        setMenu(true);
-        topFunction();
-    }
-
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
+  function exibirMenu(){
+    history.push('/menu/paciente');
+}
 
     return(
         <div>
@@ -46,57 +21,10 @@ export default function Cadastrar({history}){
 
         <div className="container">
             <div className="row">
-                    {menu == true &&(
-                        <div id="div-menu">
-                            <div className="row">
-                                <button className='meus-botoes-logar' onClick={()=>realizarLogin()}>Já sou cadastrado</button>
-                            </div>
-                            <div className="row">
-                                <button className='meus-botoes-novo' onClick={()=>realizarCadastro()}>Quero realizar meu cadastro</button>
-                            </div> 
-                        </div>
-                        )
-                    }
-                    {login == true &&(
-                        <div id="div-menu">
-                            <form >
-                            <div className="row">
-                            <h1>Entrar</h1>
-                            </div>
-                                
-                            <div className="row">
-                                
-                                <label for="email">Email:</label>
-                                <input type="text" id="email" className="form-control" required
-                                placeholder="Email" aria-label="email" aria-describedby="basic-addon1"></input>
-                                
-                            </div>
-                            <div className="row">
-                                <label for="email">Senha:</label>
-                                <input type="password"  required
-                                className="form-control" 
-                                placeholder="Senha"
-                                aria-label="senha"
-                                aria-describedby="basic-addon1"></input>
-                                
-                            </div>
-                            
-                            <div className="row" >
-                                <button type="submit" id='btn-entrar' className='meus-botoes-logar' >Entrar</button></div>
-                            <div className="row" >
-                                
-                                    <a href="#">Esqueci a senha</a>
-                                
-                                    <a href="#" onClick={()=>exibirMenu()} id="link-cadastro">Voltar</a>
-                            
-                                
-                                
-                            </div>
-                            </form>
-                        </div>
-                    )}
+                    
+                    
 
-                {cadastro == true &&(
+                
                     <div className="container">
                         <div className="div-center">
                             <h1>Cadastro</h1>
@@ -161,7 +89,7 @@ export default function Cadastrar({history}){
                                 
                            
                   </form></div>
-                    )}
+                
 
 
             </div>

@@ -10,8 +10,8 @@ import '../../assets/css/style.css';
 
 export default function Header({history}){
 
-    function cadastrarPaciente(){
-        history.push('/cadastrar/paciente');
+    function menuPaciente(){
+        history.push('/menu/paciente');
       }
 
       function home(){
@@ -34,7 +34,7 @@ export default function Header({history}){
           <li><a href="#faq">Dúvidas?</a></li>
           <li><a href="#contact">Contato</a></li>
 
-          <li className="get-started"><a href="#" onClick={() => cadastrarPaciente()}>Agendar atendimento</a></li>
+          <li className="get-started"><a href="#" onClick={() => menuPaciente()}>Agendar atendimento</a></li>
         </ul>
       </nav>
 
