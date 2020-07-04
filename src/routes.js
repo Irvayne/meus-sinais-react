@@ -5,6 +5,7 @@ import Home from './pages/Home.js';
 import CadastrarPaciente from './pages/model/paciente/Cadastro';
 import MenuPaciente from './pages/model/paciente/Menu';
 import LogarPaciente from './pages/model/paciente/Login';
+import DashPaciente from './pages/model/paciente/Dashboard';
 
 export default function Routes(){
 
@@ -15,6 +16,7 @@ export default function Routes(){
             <Route path='/menu/paciente' exact component={MenuPaciente}/>
             <Route path='/cadastrar/paciente' exact component={CadastrarPaciente}/>
             <Route path='/logar/paciente' exact component={LogarPaciente}/>
+            <Route path='/dashboard/paciente' exact component={DashPaciente} />
         </Switch>
         </BrowserRouter>
     );

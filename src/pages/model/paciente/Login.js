@@ -13,6 +13,10 @@ export default function Login({history}){
         history.push('/menu/paciente');
     }
 
+    function entrar(){
+        history.push('/dashboard/paciente');
+    }
+
     return(
         <div>
         <Header history={history}/>
@@ -46,7 +50,7 @@ export default function Login({history}){
                             </div>
                             
                             <div className="row" >
-                                <button type="submit" id='btn-entrar' className='meus-botoes-logar' >Entrar</button></div>
+                                <button type="submit" id='btn-entrar' onClick={()=>entrar()} className='meus-botoes-logar' >Entrar</button></div>
                             <div className="row" >
                                 
                                     <a href="#">Esqueci a senha</a>
