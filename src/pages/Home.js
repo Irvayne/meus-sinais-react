@@ -106,44 +106,11 @@ sobre as principais desordens mentais e práticas de autocuidado.</li>
 
         <div className="testimonials-carousel" data-aos="fade-up">
 
-          <div className="testimonial-wrap">
-            <div className="testimonial-item">
-              <img src={testimonials_1} className="testimonial-img" alt=""/>
-              <h3>Raimundo</h3>
-              <h4>Estudante</h4>
-              <p>
-                <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                Estava com ansiedade e melhorei conversando com a psicóloga.
-                <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
+          
 
-          <div className="testimonial-wrap">
-            <div className="testimonial-item">
-              <img src={testimonials_2} className="testimonial-img" alt=""/>
-              <h3>Pedro</h3>
-              <h4>Comerciante</h4>
-              <p>
-                <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                100% recuperado.
-                <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
+          
 
-          <div className="testimonial-wrap">
-            <div className="testimonial-item">
-              <img src={testimonials_3} className="testimonial-img" alt=""/>
-              <h3>Neymar</h3>
-              <h4>Jogardor</h4>
-              <p>
-                <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                Pipocava nas decisões mas me recuperei e agora toda final faço gol.
-                <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
+          
 
 
 
@@ -164,41 +131,7 @@ sobre as principais desordens mentais e práticas de autocuidado.</li>
           <p></p>
         </div>
 
-        <div class="accordion-list">
-          <ul>
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#accordion-list-1">Qual o melhor presidente, Lula ou Bolsonaro? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
-                <p>
-                  Lula.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#accordion-list-2" class="collapsed">Qual o melhor time do Brasil? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
-                <p>
-                  Corinthians.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#accordion-list-3" class="collapsed">Atendimento é gratuito? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
-                <p>
-                  Sim.
-                </p>
-              </div>
-            </li>
-
-
-
-
-
-          </ul>
-        </div>
+        
 
       </div>
     </section>
