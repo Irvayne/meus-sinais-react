@@ -24,7 +24,7 @@ export default function Dashboard(){
 
                 
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Início</span></a>
                 </li>
@@ -271,6 +271,22 @@ export default function Dashboard(){
                             </div>
                         </div>
                         </div>
+                        
+                        <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Atendimentos restantes</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">2</div>
+                                </div>
+                                <div class="col-auto">
+                                <i class="fas fa-calculator fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
 
                     <div class="row">
@@ -284,7 +300,7 @@ export default function Dashboard(){
                             </div>
                             <div class="card-body">
                             <div class="text-center">
-                                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"  src="https://i.pinimg.com/736x/c5/c6/39/c5c639ebf520188c19b7c5e495034fbc.jpg" alt=""/>
+                                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"  src="https://www.frasesdobem.com.br/wp-content/uploads/2020/06/cuidar-da-sua-1.jpg" alt=""/>
                             </div>
                             
                             
@@ -298,7 +314,7 @@ export default function Dashboard(){
                             <h6 class="m-0 font-weight-bold text-success">Mensagem do Dia</h6>
                             </div>
                             <div class="card-body">
-                            <p>Não deixe que a ansiedade destrua o caminho rumo aos seus sonhos. </p>
+                            <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"  src="https://www.42frases.com.br/wp-content/uploads/2019/10/nao-perca-a.png" alt=""/>
                             </div>
                         </div>
 

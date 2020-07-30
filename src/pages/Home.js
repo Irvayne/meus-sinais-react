@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import log from '../assets/img/logo.png';
 import details_1 from '../assets/img/details-1.png'; 
+import missao from '../assets/img/missao.png'
 import testimonials_1 from '../assets/img/testimonials/testimonials-1.jpg';
 import testimonials_2 from '../assets/img/testimonials/testimonials-2.jpg';
 import testimonials_3 from '../assets/img/testimonials/testimonials-3.jpg';
@@ -64,7 +65,7 @@ export default function Login({history}) {
 
         <div className="row content">
           <div className="col-md-4" data-aos="fade-right">
-            <img src={details_1} className="img-fluid" alt=""/>
+            <img src={missao} className="img-fluid" alt=""/>
           </div>
           <div className="col-md-8 pt-4" data-aos="fade-up">
             <h3>Sobre nós</h3>
@@ -72,17 +73,14 @@ export default function Login({history}) {
               Visão:
             </p>
             <ul>
-              <li><i className="icofont-check"></i> Usuários possam identificar as ferramentas mentais utilizadas para atingir
-um nível efetivo de saúde emocional.</li>
+              <li><i className="icofont-check"></i> Usuários possam utilizar ferramentas práticas aplicáveis no cotidiano que favoreçam uma melhor adaptação a eventos estressores e promovam um nível efetivo de saúde mental.</li>
 
             </ul>
             <p className="font-italic">
               Missão:
             </p>
             <ul>
-              <li><i className="icofont-check"></i> Acolher a demanda por assistência psicológica da comunidade
-através de atendimentos virtuais gratuitos e/ou de baixo custo; informações
-sobre as principais desordens mentais e práticas de autocuidado.</li>
+              <li><i className="icofont-check"></i> Acolher a demanda por assistência psicológica da comunidade através de atendimentos virtuais gratuitos e/ou de baixo custo; do fornecimento de informações e recursos que promovam um bem-estar mental e um autocuidado diário.</li>
 
             </ul>
           </div>
